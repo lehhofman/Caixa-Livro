@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa-Livro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Caixa-Livro</h1>
+
+        <nav>
+
+            <button>Novo Usuario</button>
+            <button>Novo Lançamento</button>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th><h2>Entradas</h2></th>
+                    <th><h2>Saidas</h2></th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td id="entradas"></td>
+                    <td id="saidas"></td>
+
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+
+                    <td id="totEntradas"></td>
+                    <td id="totSaidas"></td>
+
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </main>
+
+    <footer>
+
+        <div>
+
+            <label for="santerior">Saldo Anterior</label>
+            <input type="number" id="santerior" step="0.01" readonly>
+
+            <label for="satual">Saldo Atual</label>
+            <input type="number" id="satual" step="0.01" readonly>
+
+        </div>
+
+        <input type="date" name="data" id="data">
+
+        <div>
+
+            <label for="sdia">Saldo do Dia</label>
+            <input type="number" id="sdia" step="0.01" readonly>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
